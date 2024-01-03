@@ -9,6 +9,7 @@ if number >= 0:
 else:
     number = -number
     number = number % 10
+    print("-", end="")
 
 if number > 5:
     print(f"{number} and is greater than 5")
