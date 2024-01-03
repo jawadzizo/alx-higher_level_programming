@@ -7,7 +7,8 @@ print(f"Last digit of {number} is", end=" ")
 if number >= 0:
     number = number % 10
 else:
-    number = -(number % 10)
+    number = -number
+    number = number % 10
 
 if number > 5:
     print(f"{number} and is greater than 5")
