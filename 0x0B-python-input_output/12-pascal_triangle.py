@@ -3,6 +3,8 @@
 
 
 def pascal_triangle(n):
+    """returns a Pascal Triangle using a nested list"""
+
     pascal = []
     length = 1
 
