@@ -1,4 +1,4 @@
->>> from hello import add_integer
+>>> from 0-add_integer.py import add_integer
 >>> add_integer(2)
 100
 
