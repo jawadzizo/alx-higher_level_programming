@@ -11,4 +11,4 @@ TypeError: ... must be an integer
 >>> bg.integer_validator("width", 0) # doctest: +ELLIPSIS
 Traceback (most recent call last):
     ...
-ValueError: ... must be greater than
+ValueError: ... must be greater than 0
