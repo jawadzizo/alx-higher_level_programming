@@ -4,7 +4,7 @@
 
 
 class MyList(list):
-    """"""
+    """a subclass of the list class"""
 
     def print_sorted(self):
         """prints a sorted list"""
