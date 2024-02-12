@@ -98,5 +98,5 @@ class Rectangle(Base):
         """prints the rectangle in format:
         [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
 
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y}" +
+        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - " +
                 f"{self.__width}/{self.__height}")
