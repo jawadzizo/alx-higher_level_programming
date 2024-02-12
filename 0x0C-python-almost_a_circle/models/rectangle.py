@@ -45,17 +45,17 @@ class Rectangle(Base):
         self.__width = width
 
     @height.setter
-    def width(self, height):
+    def height(self, height):
         """The getter method of height attribute"""
         self.__height = height
 
     @x.setter
-    def width(self, x):
+    def x(self, x):
         """The getter method of x attribute"""
         self.__x = x
 
     @y.setter
-    def width(self, y):
+    def y(self, y):
         """The getter method of y attribute"""
 
         self.__y = y
