@@ -17,10 +17,7 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        if id is None:
-            super().__init__()
-        else:
-            self.id = id
+        super().__init__(id)
 
     @property
     def width(self):
