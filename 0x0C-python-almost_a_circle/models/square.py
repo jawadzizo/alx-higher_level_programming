@@ -56,3 +56,10 @@ class Square(Rectangle):
             attributes["y"] = kwargs["y"] if "y" in kwargs else self.y
 
             super().__init__(attributes["size"], attributes["size"], attributes["x"], attributes["y"], attributes["id"])
+
+    def to_dictionary(self):
+        """returns the dictionary representation of an instance"""
+
+        representation = {"id": self.id, "size": self.width, "x": self.x, "y": self.y}
+
+        return (representation)
