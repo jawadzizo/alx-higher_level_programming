@@ -42,3 +42,16 @@ class Base():
 
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(j_list, f)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """returns an object from a json representation"""
+
+        if json_string is None or len(json_string) == 0:
+            return []
+
+        import json
+
+        objects = json.loads(json_string)
+
+        return objects
