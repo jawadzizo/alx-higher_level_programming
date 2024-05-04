@@ -45,7 +45,7 @@ def check_matrix_multiplication(m_a, m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
 
-def matrix_mul(m_a, m_b):
+def lazy_matrix_mul(m_a, m_b):
     """multiplies 2 matrices"""
 
     check_matrix_multiplication(m_a, m_b)
