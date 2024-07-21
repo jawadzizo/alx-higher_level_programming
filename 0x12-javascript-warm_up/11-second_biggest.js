@@ -6,6 +6,6 @@ if (args[2] === undefined || args[3] === undefined) {
     console.log('1');
 } else {
     let array = args.slice(2).map((x) => Number(x));
-    array = array.sort().reverse();
+    array = array.sort((a, b) => b - a);
     console.log(array[1]);
 }
