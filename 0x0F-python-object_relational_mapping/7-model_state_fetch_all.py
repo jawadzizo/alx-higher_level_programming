@@ -20,7 +20,7 @@ def main():
 
     states = session.query(State).order_by(State.id)
     for state in states:
-        print(f"{state.id} : {state.name}")
+        print(f"{state.id}: {state.name}")
 
 
 if __name__ == "__main__":
