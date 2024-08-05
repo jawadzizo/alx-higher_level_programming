@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""the base module for the database classes"""
+"""the base module for the State class"""
 
 from sqlalchemy.orm import declarative_base, relationship
 from sqlalchemy import Column, Integer, String
@@ -13,4 +13,5 @@ class State(Base):
     __tablename__ = "states"
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
-    cities = relationship("City", cascade="all, delete, delete-orphan")
+    cities = relationship("City", cascade="all, delete, delete-orphan",
+                          back_populates="state")
